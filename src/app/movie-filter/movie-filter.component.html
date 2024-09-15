@@ -1,0 +1,15 @@
+<header class="bg" style="position: relative;">
+  <h1 >Watch Exclusive Blockbusters!🚀</h1>
+  <div class="form">
+    <div class="form-inner-wrapper">
+    <input
+      type="text"
+      [(ngModel)]="searchQuery"
+      (ngModelChange)="onSearchChange()"
+      placeholder="Search movies..."
+      class="search"
+    />
+    <mat-icon class="search-btn" fontIcon="{{searchQuery ? 'search' : 'search_border'}}"></mat-icon>
+    </div>
+</div>
+</header>
