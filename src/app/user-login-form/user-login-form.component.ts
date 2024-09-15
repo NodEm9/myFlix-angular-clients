@@ -67,7 +67,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './user-login-form.component.scss'
 })
 export class UserLoginFormComponent implements OnInit {
-  @Input() userData: UserData = new UserData('', '', '', new Date(), [], '');
+  @Input() userData = { Username: '', Password: '' };
   loginForm: boolean = true;
 
   constructor(

@@ -52,7 +52,7 @@ export class NavigationBarComponent implements OnInit {
     private ngZone: NgZone
 
   ) {
-    afterNextRender(() => {
+
       this.ngZone.run(() => {
         this.width = window.innerWidth || window.document.documentElement.clientWidth || window.document.body.clientWidth;
         if (this.width < 599) {
@@ -62,7 +62,6 @@ export class NavigationBarComponent implements OnInit {
         } else {
           return { width: 'large' };
         }
-      });
     });
   } 
 
