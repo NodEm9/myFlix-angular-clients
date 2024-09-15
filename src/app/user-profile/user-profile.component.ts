@@ -1,5 +1,5 @@
 /**
- * @module user-profile
+ * @name user-profile
  * @description This component will display the user's profile information.
  * @remarks This component handles user data, favorite movies, screen size detection,
  * user interactions, and dialog box interactions.

@@ -1,5 +1,5 @@
 /**
- * @module movie-list
+ * @name movie-list
  * @remarks This component will display the list of movies
  * @param movies - array of objects
  * @param filteredMovies - array of objects

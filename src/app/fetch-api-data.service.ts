@@ -1,5 +1,5 @@
 /**
- * @module fetch-api-data.service.ts
+ * @name fetch-api-data.service.ts
  * @description This file provides the methods that allow the client-side application 
  * to make HTTP requests to the server-side application.
  * @exports FetchApiDataService
@@ -8,8 +8,6 @@
  * @requires HttpErrorResponse
  * @requires Observable
  * @requires throwError
- * @requires map
- * @requires tap
  * @requires catchError
  * @requires apiUrl
  * @private getToken - get token

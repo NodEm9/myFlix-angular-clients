@@ -1,7 +1,7 @@
 /**
  * Title: dialog-box.component.ts
  * Author: Emmanuel Nodo
- * @module DialogBoxComponent
+ * @name DialogBoxComponent
  * @category Components 
  * @description This component handles the display of a dialog box with detailed information about a specific item.
  * @param name - string 
