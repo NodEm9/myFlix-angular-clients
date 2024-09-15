@@ -1,0 +1,84 @@
+
+$primary-color: #1f8aa2;
+$secondary-color: #ffffff;
+$tertiary-color: #000000;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$danger-color: #ff0000;
+
+.bg {
+  display: flex;
+  flex-direction: column;
+  min-height: 40vh; 
+  position: relative;
+  background-image: url('../../assets/bg-img.webp');
+  object-fit: cover;
+  object-position: center;
+  align-items: center; 
+  justify-content: center;
+
+  h1 {
+    font-size: calc(3rem + 1.5vw);
+    font-weight: 900;
+    color: $secondary-color;
+    text-align: center;
+    margin: 70px 0;
+    font-family: 'Poppins' , sans-serif;
+    animation: alternate-reverse 2s slidein;  
+
+    button {
+      cursor: pointer;
+      padding: 10px;
+      font-size: 2rem;
+    }
+  
+    @media all and (max-width: 768px) {
+      font-size: calc(2rem + 1.5vw);
+    }
+  }
+
+}
+
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+
+.form-inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  position: relative;
+  background: $primary-color;
+  border-radius: 15px;
+  padding: 15px 20px;
+
+ .search {
+    width: 100%;
+    padding: 14px 30px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border-color: $secondary-color;
+    border-radius: 15px;
+  }
+  .search-btn {
+    position: absolute;
+    font-size: 1.5rem;
+    float: right;
+    margin-right: 35px;
+    right: 0;
+    color: $tertiary-color;
+    font-weight: 500;
+    cursor: pointer;;
+  }
+
+  @media all and (max-width: 768px) {
+    width: 80%;
+    color: $secondary-color;
+  }
+}
+}
