@@ -1,0 +1,116 @@
+$primary-color: #1f8aa2;
+$secondary-color: #ffffff;
+$tertiary-color: #000000;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$danger-color: #ff0000;
+
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  align-items: center;
+  min-height: auto;
+  justify-content: center;
+  margin: 0 100px;
+  padding: 50px;
+  min-height: 100vh;
+  font-size: 16px;
+  overflow: hidden;
+  gap: 30px;
+}
+
+.grid-one {
+  display: grid;
+  grid-template-columns: 1fr; 
+}
+
+.mat-card {
+  position: relative;
+  flex: 1 1 300px;
+  min-height: auto;
+  width: 340px;
+  margin:50px 10px;
+  box-shadow: 0 0 10px 0 $shadow-color;
+  border: 1px solid $shadow-color;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  .mat-dialog-content {
+   text-align: left;
+  }
+
+ 
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  mat-card-title {
+    font-size: 1.5rem;
+    padding: 5px 0;
+    font-weight: 500;
+    color: $tertiary-color;
+  }
+
+}
+
+.mat-card:hover {
+  transform: scale(1.05);
+}
+
+.mat-card-actions {
+  display: flex;
+  align-items: center;
+  margin: 16px  0;
+  font-size: calc(0.5em + 0.5vw);
+
+  button:hover {
+    color: $secondary-color;
+    background: $tertiary-color;
+  }
+}
+
+.mat-icon {
+  position: relative;
+  font-size: 2rem;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  margin-right: 16px;
+  flex: 1;
+  color: $tertiary-color;
+}
+
+.mat-icon:hover {
+  cursor: pointer;
+  padding: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+@media all and (max-width: 600px) {
+  .bg {
+    h1 {
+      font-size: 2rem;
+    }
+    form {
+      width: 80%;
+    }
+  }
+  .card {
+    grid-template-columns: auto;
+    gap: 50px;
+    margin: 0;
+    padding: 40px 25px;
+    align-items: center;
+    justify-content: center;
+
+    .mat-card {
+      width: 100%;
+      margin:0;
+    }
+    
+  }
+
+ 
+}
