@@ -1,0 +1,36 @@
+$primary-color: #00718a;
+$secondary-color: #ffffff;
+$tertiary-color: rgb(0, 0, 0);
+$shadow-color: rgba(0, 0, 0, 0.1);
+
+.mat-card {
+  background-color: rgb(3, 122, 158);
+  color: white;
+  padding: 10px;
+
+}
+
+mat-card-title {
+  margin: 10px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: $secondary-color;
+  color: $tertiary-color;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px $shadow-color;
+}
+
+.register-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+

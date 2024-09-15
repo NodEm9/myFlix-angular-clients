@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<mat-card class="mat-card">
+  <mat-card-header class="mat-card-header">
+    <mat-card-title class="mat-card-title">Login</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="mat-card-content">
+    <form (ngSubmit)="loginUser($event)">
+      <mat-form-field class="mat-form-field">
+        <input
+          matInput
+          [(ngModel)]="userData.Username"
+          placeholder="Username"
+          type="text"
+          name="Username"
+          autocomplete="on"
+          required
+        >
+        </mat-form-field>
+        <mat-form-field>
+        <input
+          matInput
+          [(ngModel)]="userData.Password"
+          type = "password"
+          placeholder="Password"
+          name="Password"
+          autocomplete="off"
+          required
+        >
+      </mat-form-field>
+      <mat-card-actions class="mat-card-actions">
+        <button
+          mat-raised-button
+          type="submit"
+          color="primary"
+          name="login"
+        >
+        Login
+        </button>
+    </mat-card-actions> 
+  </form>
+  </mat-card-content>
+</mat-card>
+
+
