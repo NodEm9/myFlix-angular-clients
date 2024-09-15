@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<navigation-bar [(navRender)]="navigationBar"></navigation-bar>
+<div class="container">
+    <h1 class="page-name">User Profile</h1>
+    <div class="grid">
+        <ul class="list">
+            <h2>Account Information</h2>
+            <li><span> Username: <small>{{userData.Username}}</small></span></li>
+            <li><span>Email: <small>{{userData.Email}}</small></span></li>
+            <li><span>Birthday: <small>{{formattedDate(userData.Birthday)}}</small></span> </li>
+            <li><span>Role: <small>{{userData.Role}}</small> </span></li>
+        </ul>
+        <!--Update User button-->
+        <div *ngIf="openUpdateUserDialog else showForm">
+            <button [ngClass]="setCssClasses" (click)="openUpdateUserDialog()" class="updateBtn">Update Account</button>
+        </div>
+        <ng-template #showForm>
+            <update-user-data [(userData)]="updateDataForm"></update-user-data>
+        </ng-template>
+    </div>
+    <!--Delete User button-->
+    <div class="deleteBtn"><button (click)="deleteUserAccount()">Delete Account</button></div>
+    <mat-divider></mat-divider>
+    <!--Favorite Movies-->
+    <div class="favorite-movie">
+        <h2>Favorite Movies</h2>
+        <movie-card [movies]="favoriteMovies"></movie-card>
+    </div>
+</div>
