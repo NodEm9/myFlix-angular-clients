@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<div class="forms">
+  <form (ngSubmit)="updateUser($event)">
+    <h3>Update Account</h3>
+    <mat-form-field>
+      <input matInput [(ngModel)]="userData.Username" placeholder="Username" type="text" name="Username" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="userData.Password" type="password" placeholder="Password" name="Password"
+        required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="userData.Email" type="email" placeholder="Email" name="Email" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="userData.Birthday" type="date" placeholder="Birthday" name="Birthday">
+    </mat-form-field>
+  <mat-card-actions>
+    <button type="submit" name="UpdateUser"  color="secondary">
+      Save Changes
+    </button>
+  </mat-card-actions>
+</form>
+</div>
