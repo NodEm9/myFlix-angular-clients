@@ -1,0 +1,9 @@
+<div class="container">
+  <navigation-bar [(navRender)]="navigationBar"></navigation-bar> 
+<movie-filter (searchChange)="onSearchChange($event)"></movie-filter>
+<movie-card id="movie-catd"  [movies]="filteredMovies" ></movie-card>
+<footer>    
+  <mat-paginator [length]="totalMovies"> </mat-paginator>
+</footer>
+</div>
+ 
