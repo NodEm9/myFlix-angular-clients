@@ -11,7 +11,7 @@ import {  MatDialogRef } from '@angular/material/dialog';
 import { provideClientHydration, withHttpTransferCacheOptions } from '@angular/platform-browser';
 import { IMAGE_CONFIG } from '@angular/common';
  
-  
+   
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
