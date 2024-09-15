@@ -1,0 +1,56 @@
+<nav class="navbar">
+  <mat-toolbar class="mat-toolbar">
+      @if(width > 950) {
+      <mat-toolbar-row class="mat-toolbar-row">
+          <span class="spacer1">
+              <h1 id="brand-name"> 
+                  <a 
+                  aria-label="This is the brand name of the application and it serve also as a link to movies list page"
+                      routerLink="/movieslist">
+                      myFlix</a></h1>
+              <a role="navigation" routerLink="/movieslist" color="primary" class="homepage">
+                  Home
+              </a>
+          </span>
+          <span class="spacer">
+              <a role="navigation" routerLink="/users" color="primary" class="profile">
+                  Profile
+              </a>
+              <a role="navigation" routerLink="/" color="primary" class="logout" (click)="logOut()">
+                  Logout
+              </a>
+          </span>
+      </mat-toolbar-row>
+      } @else {
+      <div class="mat-toolbar-row">
+          <h1><a 
+              aria-label="This is the brand name of the application and it serve also as a link to movies list page"
+               routerLink="/movieslist"
+               >myFlix</a></h1>
+          <button mat-button [matMenuTriggerFor]="menu" class="menu">Menu</button>
+      </div>
+      }
+      <mat-menu #menu="matMenu">
+          <span class="spacer1">
+              <!-- Render Home link text when on large screen -->
+              @if(width === 'large') {
+              <a mat-menu-item role="menuitem" routerLink="/movieslist" color="primary" class="homepage">
+                  Home
+              </a>
+              } @else {
+              <!-- Render Home link icon when on small screen -->
+              <a mat-menu-item role="menuitem" routerLink="/movieslist" color="primary" class="homepage">
+                  <mat-icon class="mat-icon-rtl-mirror" fontIcon="home"></mat-icon>
+                  Home
+              </a>}
+          </span>
+          <a mat-menu-item role="menuitem" routerLink="/users" color="primary" class="profile">
+              Profile
+          </a>
+          <a mat-menu-item role="menuitem" routerLink="/" color="primary" class="logout" (click)="logOut()">
+              Logout
+          </a>
+      </mat-menu>
+
+  </mat-toolbar>
+</nav>
