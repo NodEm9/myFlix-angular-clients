@@ -1,0 +1,13 @@
+$primary-color: #1f8aa2;
+$secondary-color: #ffffff;
+$tertiary-color: #000000;
+
+footer mat-paginator {
+  background: $tertiary-color;
+  color: $secondary-color;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+}
