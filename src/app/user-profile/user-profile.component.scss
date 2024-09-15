@@ -1,0 +1,257 @@
+$primary-color: #1f8aa2;
+$secondary-color: #ffffff;
+$tertiary-color: #000000;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$danger-color: #ff0000;
+
+.container {
+  display: grid;
+  grid-template-rows: 180px auto auto;
+  margin: 60px auto;
+  padding: 60px 10px;
+  font-size: 16px;
+  min-height: 100vh;
+  overflow: hidden;
+  text-align: center;
+
+  .page-name {
+    font-size: calc(1.5rem + 1vw);
+    margin-top: 80px 0;
+    font-weight: 500;
+    height: auto;
+  }
+}
+
+mat-divider {
+  margin: 20px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 80px 60px;
+  margin: 0 80px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 14px 14px 14px 10px $shadow-color;
+
+  .list {
+    padding: 0 20px;
+    border-radius: 10px;
+    text-align: left;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+    li {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      span {
+        display: flex;
+        width: 40%;
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin: 0;
+        justify-content: space-between;
+
+        small {
+          font-size: 1.2rem;
+          font-weight: 400;
+          width: 20%;
+        }
+      }
+
+    }
+
+  }
+}
+
+.size {
+  width: 50%;
+  background: $primary-color;
+}
+
+.bgColor {
+  margin: 20px 0;
+  width: 50%;
+  height: 80px;
+  padding: 0 20px;
+  font-size: calc(1rem + 0.7vw);
+  font-weight: 500;
+  background: $primary-color;
+  color: $secondary-color;
+  border: none;
+  border-radius: 15px;
+  transition: opacity .3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.deleteBtn {
+  margin-top: 60px;
+  padding: 20px 60px;
+  text-align: left;
+
+  button {
+    width: auto;
+    padding: 10px 20px;
+    font-size: calc(1rem + 0.2vw);
+    font-weight: 500;
+    background: $danger-color;
+    color: $secondary-color;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    transition: opacity .3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+
+.favorite-movie {
+  width: 100%;
+  padding: 20px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.mat-card {
+  flex: 1 1 auto;
+  min-height: auto;
+  width: 100%;
+  margin: 10px;
+  text-align: left;
+  box-shadow: 0 0 10px 0 $shadow-color;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .mat-dialog-content {
+    text-align: center;
+  }
+
+}
+
+.mat-card:hover {
+  transform: scale(1.05);
+}
+
+.mat-card-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 4px;
+  width: 100%;
+  font-size: calc(0.5em + 0.5vw);
+
+  button:hover {
+    background: $tertiary-color;
+    color: $secondary-color;
+  }
+}
+
+.mat-icon {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.mat-icon:hover {
+  cursor: pointer;
+  padding: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+@media all and (max-width: 600px) {
+  .container {
+    grid-template-rows: auto;
+    padding: 40px 20px;
+    margin: 80px 0;
+    align-items: center;
+    justify-content: center;
+
+    .page-name {
+      font-size: calc(2rem + 1vw);
+      margin-bottom: 80px;
+      font-weight: 500;
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .grid {
+    grid-template-columns: auto;
+    padding: 0 20px;
+    margin-top: -60px;
+    width: auto;
+    top: 0;
+    justify-self: center;
+
+    .list {
+      padding: 0 10px;
+      border-radius: 10px;
+      text-align: left;
+      width: 100%;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      li {
+        width: 100%;
+
+        span {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          font-size: 1.2rem;
+          gap: 70px;
+          margin: 0;
+
+          small {
+            font-size: 1rem;
+            width: 40%;
+            text-align: left;
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .updateBtn {
+    border: none;
+    padding: 5px 40px;
+    height: 50px;
+    font-weight: 500;
+    width: auto;
+    font-size: calc(1rem + 0.8vw);
+  }
+
+  .deleteBtn {
+    margin: 15px 0;
+
+    button {
+      float: left;
+      margin-left: -2.8rem;
+    }
+  }
+}
