@@ -17,7 +17,7 @@ import { UserData } from '../../models/userData';
 
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { MatCardModule } from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card'; 
 import { MatCardTitle } from '@angular/material/card';
 import { MatCardContent } from '@angular/material/card';
 import { MatCardActions } from '@angular/material/card';

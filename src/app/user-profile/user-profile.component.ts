@@ -14,7 +14,7 @@
  * @see FetchApiDataService - fetch-api-data.service.ts
  * @param dialog - MatDialog
  * @param snackBar - MatSnackBar
- * @param router - Router
+ * @param router - Router 
  * @param icon - object 
  * @param movie - object
  * @param title - string
