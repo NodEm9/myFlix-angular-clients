@@ -1,0 +1,95 @@
+$primary-color: #1f8aa2;
+$secondary-color: #ffffff;
+$tertiary-color: #000000;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$danger-color: #ff0000;
+
+.navbar {
+  background: $tertiary-color;
+  height: 9vh;
+}
+
+.mat-toolbar {
+  background: $tertiary-color;
+  font-size: 1rem;
+  padding: 10px 80px;
+  top: 0;
+  position: fixed;
+  z-index: 5;
+
+  h1 a {
+    font-size: 2.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: $primary-color;
+    text-decoration: none;
+  }
+
+  .mat-toolbar-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    color: $secondary-color;
+  }
+
+  #matMenu {
+    width: 100vw;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $secondary-color;
+  }
+
+  .spacer1 {
+    width: 14%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .spacer {
+    width: 18%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .homepage,
+  .logout,
+  .profile {
+    text-decoration: none;
+    font-size: calc(0.7rem + 0.5vw);
+    color: $secondary-color;
+    transition: text-decoration 0.8s ease-in-out;
+    cursor:cell;
+  }
+
+  .homepage:hover,
+  .logout:hover,
+  .profile:hover {
+    text-decoration: underline;
+  }
+
+  a:focus,
+  h1:focus {
+    outline: none;
+    cursor:crosshair;
+  }
+}
+}
+
+@media all and (max-width: 600px) {
+  .mat-toolbar {
+    padding: 40px 6px;
+    font-size: 1rem;
+
+    h1 a {
+      font-size: 2rem;
+    }
+  }
+  
+}
