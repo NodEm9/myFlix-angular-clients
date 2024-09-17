@@ -162,7 +162,7 @@ ng build
 - Push to the branch (git push origin feature-branch).
 - Create a pull request.
 
-- **Note:** Ensure all commits are squashed before pushing. If you need help on how to squash commit refer to this short video with detailed explaination. https://www.youtube.com/watch?v=V5KrD7CmO4o&t=209s
+- **Note:** Do not forget to squash your commits before pushing your code. If you need help on how to squash commit refer to this short video with detailed explaination. https://www.youtube.com/watch?v=V5KrD7CmO4o&t=209s
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
