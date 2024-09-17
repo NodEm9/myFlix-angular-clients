@@ -1,12 +1,8 @@
 /**
- * @name AppComponent
- * @catergory app 
+ * @module app component
  * @import { Component } from '@angular/core';
  * @import { RouterOutlet } from '@angular/router';
- * @export class AppComponent
- * @description This is the root component of the app
- * @module app component
- * @exports class AppComponent
+ * @remarks This is the root component of the application
  */
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';

@@ -180,7 +180,7 @@ export class MovieCardComponent implements OnInit {
       data: {
         name: movie.Director.name,
         bio: movie.Director.bio,
-        birthyear: movie.Director.birthyear,
+        birthdate: movie.Director.birthdate,
         deathyear: movie.Director.deathyear
       },
       role: 'dialog',

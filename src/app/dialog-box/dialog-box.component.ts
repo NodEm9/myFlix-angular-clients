@@ -1,13 +1,11 @@
 /**
  * Title: dialog-box.component.ts
  * Author: Emmanuel Nodo
- * @name DialogBoxComponent
- * @category Components 
- * @description This component handles the display of a dialog box with detailed information about a specific item.
+ * @remarks This component handles the display of a dialog box with detailed information about a specific item.
  * @param name - string 
  * @param title - string
  * @param bio - string
- * @param birthyear - string
+ * @param birthdate - string
  * @param deathyear - string
  * @param description - string
  * @param genre - string
@@ -19,9 +17,8 @@
  * @method closeSynopsisDailogBox - function
  * @see MatDialogRef - angular/material/dialog
  * @see MAT_DIALOG_DATA - angular/material/dialog
- * @exports class DialogBoxComponent
- *  
  */
+
 import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { CommonModule } from '@angular/common';
@@ -62,7 +59,7 @@ import { MatIconModule } from '@angular/material/icon';
 export class DialogBoxComponent implements OnInit {
   constructor(
     @Inject(MAT_DIALOG_DATA)
-    public data: { name: string, title: string, bio: string, birthyear: string, deathyear: string, description: string, genre: string },
+    public data: { name: string, title: string, bio: string, birthdate: string, description: string, genre: string },
     public dialogRef : MatDialogRef<DialogBoxComponent>
   ) { }
 
