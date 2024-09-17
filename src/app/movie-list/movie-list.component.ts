@@ -66,6 +66,8 @@ export class MovieListComponent {
   movieListFilter: any;
 
   navigationBar: any;
+  cachedMovies = JSON.parse(localStorage.getItem('movies') || '{}');  
+
 
   constructor(
     public fetchApiData: FetchApiDataService,
@@ -75,7 +77,7 @@ export class MovieListComponent {
 
   ngOnInit(): void {
     this.navigationBar = this.defaultScreenSize.width;
-    this.getMovies();
+    this.getMovieData();
     this.filterMovies = this.movies;
     this.length = this.movies.length;
   }
@@ -105,12 +107,12 @@ export class MovieListComponent {
    * @returns void
    * @function getMovieData - function
    */
-  // getMovieData(): void {
-  //   this.movies.length === 0 ? this.getMovies() : this.getMoviesFromCache();
-  //   if (this.movies.length !== 0) {
-  //     this.totalMovies = this.movies.length;
-  //   }
-  // };  
+  getMovieData(): void {
+    this.movies.length === 0 ? this.getMovies() : this.getMoviesFromCache();
+    if (this.movies.length !== 0) {
+      this.totalMovies = this.movies.length;
+    }
+  };  
 
   /**
    * @description This function will get the list of movies from the local storage
@@ -122,9 +124,9 @@ export class MovieListComponent {
    * @returns void
    * @function getMoviesFromCache - function
    */
-  // getMoviesFromCache() {
-  //   this.movies = JSON.parse(this.cachedMovies.toString());
-  // }
+  getMoviesFromCache() {
+    this.movies = this.cachedMovies.toString();
+  }
 
   /**
    * @description This function will get the list of movies from the API
@@ -136,6 +138,7 @@ export class MovieListComponent {
     this.fetchApiData.getAllMovies().subscribe((data: any) => {
       this.filteredMovies = data;
       this.movies = data;
+      localStorage.setItem('movies', JSON.stringify(this.movies));
       if (this.movies.length !== 0) {
         this.totalMovies = this.movies.length;
       }
