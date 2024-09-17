@@ -23,7 +23,6 @@
  * @see NavigationBarComponent - navigation-bar.component.ts
  * @see MovieFilterComponent - movie-filter.component.ts
  * @see MovieCardComponent - movie-card.component.ts
- * @exports class MovieListComponent
  */
 import { Component } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';

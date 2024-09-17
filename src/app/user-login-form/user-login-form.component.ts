@@ -13,8 +13,6 @@
  * @method loginUser - Logs in the user by sending the user data to the backend for authentication.
  * @method openResetPasswordForm - Opens the reset password form.
  * @method ngOnInit - This lifecycle hook function is used to initialize the component.
- * @export class UserLoginFormComponent
- *
  */
 import { Component, OnInit, Input } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';

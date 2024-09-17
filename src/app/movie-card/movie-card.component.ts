@@ -19,7 +19,6 @@
  * @public favoriteMovie - function
  * @public handleRemoveFavoriteMovie - function
  * @constructor MovieCardComponent
- * @exports class MovieCardComponent
  */
 
 import { Component, Input, Injectable, Output, OnInit, EventEmitter } from '@angular/core';;

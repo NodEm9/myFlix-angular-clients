@@ -7,7 +7,6 @@
  * @method openUserLoginDialog - Opens the user login dialog.
  * @see UserRegistrationFormComponent - user-registration-form.component.ts
  * @see UserLoginFormComponent - user-login-form.component.ts
- * @exports class WelcomePageComponent
  */
 import { Component, OnInit } from '@angular/core';
 import { UserRegistrationFormComponent } from '../user-registration-form/user-registration-form.component';

@@ -8,8 +8,6 @@
  * @param {MatDialogRef} dialogRef - The dialog reference object.
  * @param {MatSnackBar} snackBar - The snack bar object.
  * @method registerUser - Registers the user by sending the user data to the backend for registration.
- * @method ngOnInit - This lifecycle hook function is used to initialize the component.
- * @export class UserRegistrationFormComponent
  */
 import { Component, OnInit, Input } from '@angular/core';
  

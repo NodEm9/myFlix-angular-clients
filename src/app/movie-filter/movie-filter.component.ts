@@ -6,8 +6,6 @@
  * @param searchChange: EventEmitter 
  * @method onSearchChange(): void
  * @returns searchChange event
- * @class MovieFilterComponent 
- * @exports class MovieFilterComponent
  */
 import { Component, Injectable, Output, EventEmitter } from '@angular/core';
 import { CommonModule, NgOptimizedImage } from '@angular/common';

@@ -6,8 +6,6 @@
  * @method updateUser - function
  * @see FetchApiDataService - fetch-api-data.service.ts
  * @see UserData - models/userData.ts
- * @export class UpdateUserDataComponent
- * 
  */
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FetchApiDataService } from '../fetch-api-data.service';

@@ -1,5 +1,6 @@
 /**
  * Title: navigation-bar.component.ts
+ * @name NavigationBarComponent 
  * @remarks This component handles the navigation bar for the application 
  * @param navRender - object
  * @param width - number
@@ -8,8 +9,6 @@
  * @public router - Router
  * @public toolBar - MatToolbarModule
  * @method logOut - function
- * @name NavigationBarComponent 
- * @exports class NavigationBarComponent
  */
 import { Component, EventEmitter, Injectable, Input, OnInit, Output, NgZone, afterNextRender } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
