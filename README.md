@@ -1,9 +1,9 @@
-# MyFlix-Angular-Client
+# MyFlix-Angular-Clients
 
 ## Overview
-MyFlix-Angular-Client is an Angular-based single-page application (SPA) that provides users with access to a movie database. Users can sign up, log in, browse a list of movies, view movie details, add movies to their list of favorites, and manage their user profile. The application features responsive design and dynamic navigation with dialog boxes for various user interactions like sign up, login, and user updates.
+MyFlix-Angular-Clients is an Angular-based single-page application (SPA) that provides users with access to a movie database. Users can sign up, log in, browse a list of movies, view movie details, add movies to their list of favorites, and manage their user profile. The application features responsive design and dynamic navigation with dialog boxes for various user interactions like sign up, login, and user updates.
 
-**See the live app:** [View app live](https://nodem9.github.io/myFlix-angular-client/)
+**See the live app:** [View app live](https://nodem9.github.io/myFlix-angular-clients/)
 
 ### Features
 
@@ -108,8 +108,8 @@ src/
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/yourusername/myflix-angular-client.git
-cd myflix-angular-client
+git clone https://github.com/NodEm9/myflix-angular-clients.git
+cd myflix-angular-clients
 ```
 
 2. **Install Dependencies: Ensure you have Node.js installed, then run:**
