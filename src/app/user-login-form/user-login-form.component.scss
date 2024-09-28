@@ -5,14 +5,15 @@ $tertiary-color: #4b4b4b;
 .mat-card {
   margin: 0 auto;
   width: 100%;
-  background: $tertiary-color;
-  color: $secondary-color;
+  height: 100%;
+  // background: $tertiary-colo;
+  color: $tertiary-color;
 
   .mat-card-header {
     justify-content: center;
     align-items: center;
     .mat-card-title {
-      color: $secondary-color;
+      color: $tertiary-color;
       font-size: calc(1em + 1vw);
       font-weight: bold;
       text-align: center;
@@ -41,6 +42,7 @@ $tertiary-color: #4b4b4b;
           border: 1px solid $primary-color;
           font-size: calc(0.5em + 1vw);
           transition: opacity ease-in-out 0.3s;
+          border-radius: 5px;
           cursor: pointer;
           color: $secondary-color;
         }

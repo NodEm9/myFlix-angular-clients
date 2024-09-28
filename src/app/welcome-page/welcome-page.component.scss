@@ -39,14 +39,20 @@ $shadow-color: rgba(0, 0, 0, 0.1);
   }
 
   .login {
-    background: $tertiary-color;
+    background: $secondary-color;
+    color: $tertiary-color;
   }
 
   .signup {
     background: $primary-color;
   }
   
-  .buttons:hover {
+  .login:hover {
+    opacity: 0.9;
+    color: $primary-color;
+    cursor: pointer;
+  }
+  .signup:hover {
     opacity: 0.8;
     color: $secondary-color;
     cursor: pointer;
