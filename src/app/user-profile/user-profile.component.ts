@@ -86,7 +86,6 @@ export class UserProfileComponent implements OnInit {
   ngOnInit(): void {
     this.getUser();
     this.favoriteMovies = this.getFavoriteMovies();
-    this.formattedDate(this.userData.Birthday);
     this.navigationBar = this.getScreenSize();
   }
 
@@ -106,23 +105,6 @@ export class UserProfileComponent implements OnInit {
    */
   getScreenSize(): any {
     return this.navRender
-  }
-
-
-  /**
-   * 
-   * @param {Date} date - date object
-   * @returns {string} - formatted date string
-   * @remarks This method will take a date object and return a formatted date string
-   * @see date - Date
-   * @see formattedDate - user-profile.component.ts
-   */
-  formattedDate(date: Date): string {
-    if (typeof date === 'string') {
-      return new Date(date).toLocaleDateString();
-    } else {
-      return date.toLocaleDateString();
-    }
   }
 
   /**
