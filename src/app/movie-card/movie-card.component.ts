@@ -21,7 +21,7 @@
  * @constructor MovieCardComponent
  */
 
-import { Component, Input, Injectable, Output, OnInit, EventEmitter } from '@angular/core';;
+import { Component, Input, Injectable, Output, OnInit} from '@angular/core';;
 import { Router } from '@angular/router';
 
 
@@ -52,10 +52,10 @@ import { MatDialog } from '@angular/material/dialog';
 
 @Injectable(
   { providedIn: 'root' }
-) 
+)
 
 @Component({
-  selector: 'movie-card',
+  selector: 'movie-card', 
   standalone: true,
   imports: [
     MatCardModule,
@@ -85,7 +85,6 @@ export class MovieCardComponent implements OnInit {
   @Output() favoriteMovies: any;
   favorite: any;
   totalMovies: any = [];
-  
 
   constructor(
     public fetchApiData: FetchApiDataService,
@@ -107,7 +106,7 @@ export class MovieCardComponent implements OnInit {
    * @method favoriteMovie - function
    * 
    */
-  favoriteMovie(movie: any) {
+  favoriteMovie(movie: any): void {
     let user = JSON.parse(localStorage.getItem('user') || '');
     const icon = document.getElementById(`${movie._id}-favorite-icon`);
     if (!user.favoriteMovies.includes(movie._id)) {
@@ -145,7 +144,6 @@ export class MovieCardComponent implements OnInit {
   handleRemoveFavoriteMovie(movie: any): void {
     let user = JSON.parse(localStorage.getItem('user') || '');
     const icon = document.getElementById(`${movie._id}-favorite-icon`);
-
     this.fetchApiData.removeFavoriteMovie(movie._id).subscribe((resp: any) => {
       /**
        * Update user's favorite movies by setting it
@@ -167,13 +165,13 @@ export class MovieCardComponent implements OnInit {
     });
   };
 
-  
- /**
-  * @param movie - object
-  * @returns show director
-  * @description This function will open the dialog box for the movie director
-  * @method showDirector - function
-  */
+
+  /**
+   * @param movie - object
+   * @returns show director
+   * @description This function will open the dialog box for the movie director
+   * @method showDirector - function
+   */
   showDirector(movie: any): void {
     this.dialog.open(DialogBoxComponent, {
       data: {

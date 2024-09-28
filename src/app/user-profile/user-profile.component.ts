@@ -232,7 +232,7 @@ export class UserProfileComponent implements OnInit {
         deathyear: movie.Director.deathyear
       },
       role: 'dialog',
-    });
+    }); 
   };
 
   // This function will open the dialog box for the genre information
