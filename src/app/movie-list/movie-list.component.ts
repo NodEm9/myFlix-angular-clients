@@ -68,7 +68,6 @@ export class MovieListComponent {
   navigationBar: any;
   cachedMovies = JSON.parse(localStorage.getItem('movies') || '{}');  
 
-
   constructor(
     public fetchApiData: FetchApiDataService,
     public snackBar: MatSnackBar,
