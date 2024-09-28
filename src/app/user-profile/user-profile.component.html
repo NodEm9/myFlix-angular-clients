@@ -7,7 +7,7 @@
             <h2>Account Information</h2>
             <li><span> Username: <small>{{userData.Username}}</small></span></li>
             <li><span>Email: <small>{{userData.Email}}</small></span></li>
-            <li><span>Birthday: <small>{{formattedDate(userData.Birthday)}}</small></span> </li>
+            <li><span>Birthday: <small>{{userData.Birthday | date:"dd/MM/yy"}}</small></span> </li>
             <li><span>Role: <small>{{userData.Role}}</small> </span></li>
         </ul>
         <!--Update User button-->
