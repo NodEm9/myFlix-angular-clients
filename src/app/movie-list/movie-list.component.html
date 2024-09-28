@@ -1,5 +1,5 @@
-<div class="container">
-  <navigation-bar [(navRender)]="navigationBar"></navigation-bar> 
+ <navigation-bar [(navRender)]="navigationBar"></navigation-bar> 
+ <div class="container">
 <movie-filter (searchChange)="onSearchChange($event)"></movie-filter>
 <movie-card id="movie-catd"  [movies]="filteredMovies" ></movie-card>
 <footer>    
