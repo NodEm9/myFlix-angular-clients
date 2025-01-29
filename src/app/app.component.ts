@@ -1,12 +1,5 @@
-/**
- * @module app component
- * @import { Component } from '@angular/core';
- * @import { RouterOutlet } from '@angular/router';
- * @remarks This is the root component of the application
- */
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
 
 @Component({
   selector: 'app-root',

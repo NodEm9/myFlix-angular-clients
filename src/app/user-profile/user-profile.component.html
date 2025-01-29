@@ -10,7 +10,6 @@
             <li><span>Birthday: <small>{{userData.Birthday | date:"dd/MM/yy"}}</small></span> </li>
             <li><span>Role: <small>{{userData.Role}}</small> </span></li>
         </ul>
-        <!--Update User button-->
         <div *ngIf="openUpdateUserDialog else showForm">
             <button [ngClass]="setCssClasses" (click)="openUpdateUserDialog()" class="updateBtn">Update Account</button>
         </div>
@@ -18,10 +17,8 @@
             <update-user-data [(userData)]="updateDataForm"></update-user-data>
         </ng-template>
     </div>
-    <!--Delete User button-->
     <div class="deleteBtn"><button (click)="deleteUserAccount()">Delete Account</button></div>
     <mat-divider></mat-divider>
-    <!--Favorite Movies-->
     <div class="favorite-movie">
         <h2>Favorite Movies</h2>
         <movie-card [movies]="favoriteMovies"></movie-card>
